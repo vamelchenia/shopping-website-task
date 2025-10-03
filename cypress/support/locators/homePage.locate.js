@@ -5,6 +5,8 @@ const GITHUB_LABEL = 'a[aria-label="View source on Github"]';
 const LEFT_PANEL = '.sc-ebmerl-2';
 const FREE_SHIPPING = 'Free shipping';
 
+// const GITHUB_LINK = 'a[href*="https://github.com/vamelchenia/shopping-website-task"]';
+const GITHUB_LINK = "https://github.com/vamelchenia/shopping-website-task";
 
 class homePageLocatorManager {
   getProductCard = () => {
@@ -20,6 +22,10 @@ class homePageLocatorManager {
   getGithubLabel = () => {
     return cy
       .get(GITHUB_LABEL);
+  };
+
+  getGithubLink = () => {
+      return GITHUB_LINK;
   };
 
   getLeftPanel = () => {

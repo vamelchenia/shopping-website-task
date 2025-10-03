@@ -7,7 +7,7 @@ const createEsbuildPlugin = require('@badeball/cypress-cucumber-preprocessor/esb
 module.exports = defineConfig({
   e2e: {
     baseUrl: 'https://react-shopping-cart-67954.firebaseapp.com/',
-   specPattern: 'cypress/e2e/features/**/*.feature', // recursive
+    specPattern: "cypress/e2e/**/*.feature",
     async setupNodeEvents(on, config) {
       await addCucumberPreprocessorPlugin(on, config);
 
