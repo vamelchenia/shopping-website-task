@@ -2,8 +2,6 @@ node_modules
 package-lock.json
 cypress.env.json
 cypress/reports
-cypress/visual-testing/local/diff
-/cypress/fixtures/output
 /.idea/
 /cypress/downloads
 custom_report.js
